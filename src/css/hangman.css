@@ -1,0 +1,30 @@
+.hangman {
+	margin: 4vw auto;
+	/* height: 330px; */
+	/* width: 236px; */
+	height: 25.17vw;
+	width: 18vw;
+}
+
+.hangman_parent * {
+	fill: none;
+	stroke-width: 10px;
+	margin: auto;
+	/* opacity: 0; */
+}
+
+.hangman_on {
+	/* opacity: 1; */
+	stroke: currentColor;
+}
+
+.hangman_dim {
+	/* opacity: 1; */
+	stroke: #ccc;
+}
+
+.hangman_face {
+	/* opacity: 1; */
+	stroke-width: 4px;
+	stroke: currentColor;
+}
