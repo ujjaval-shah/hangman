@@ -2,6 +2,8 @@
 
 learning.md
 exp.js
+*.pyc
+data_processing
 
 # dependencies
 /node_modules

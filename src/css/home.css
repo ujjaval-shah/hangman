@@ -1,0 +1,23 @@
+.home {
+    margin: 4vw;
+}
+
+.theme {
+    margin: 2vw;
+}
+
+.level {
+    display: inline-block;
+    margin: 0 1vw;
+}
+
+.play {
+    height: 1.5vw;
+    margin: 0 0.5vw;
+    filter: invert(9%) sepia(100%) saturate(7494%) hue-rotate(248deg) brightness(90%) contrast(143%);
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}

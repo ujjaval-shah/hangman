@@ -1,6 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import playButton from '../images/play-button-1.svg';
+// import { useNavigate } from "react-router-dom";
 
-function Status({ ended, victory, health, word }) {
+
+function Status({ ended, victory, health, word, refreshPage }) {
 
     const status = ended ? (
         victory ? "Congratulations!! You won!!" : `Game Over! The Correct Ans is ${word}.`
@@ -14,9 +18,9 @@ function Status({ ended, victory, health, word }) {
             {ended &&
                 <>
                     {'   '}
-                    <a href='/'>Restart</a>
+                    <div className='a' onClick={refreshPage}>Restart<img className='play' src={playButton} alt="Play" /></div>
                     {'   '}
-                    <a href='/'>Home</a>
+                    <Link to={'/'}>Home</Link>
                 </>
             }
         </div>

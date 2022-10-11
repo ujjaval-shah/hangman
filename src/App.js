@@ -1,13 +1,19 @@
 import './App.css';
-import Game from './components/Game';
+import Theme from './components/Theme';
 import Title from './components/Title';
+import { Routes, Route } from "react-router-dom";
+import Home from './components/Home';
+import PageNotFound from './components/PageNotFound';
 
 function App() {
 	return (
 		<div className="App">
 			<Title />
-			{/* <Game word={"Paneer Tikka Masala".toUpperCase()} /> */}
-			<Game word={"PANEER".toUpperCase()} />
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/theme/:theme/level/:level" element={<Theme />} />
+				<Route path="*" element={<PageNotFound />} />
+			</Routes>
 		</div>
 	);
 }

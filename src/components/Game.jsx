@@ -10,7 +10,7 @@ class Game extends Component {
 
     state = {
         health: 6,
-        discovered: new Set(['P', 'N', 'K']),
+        discovered: new Set([]),
         ended: false,
         victory: false
     }
@@ -19,6 +19,7 @@ class Game extends Component {
         const { word } = this.props;
         let win = true;
         for (const ch of word) {
+            if (ch === ' ') continue;
             console.log(ch, discovered.has(ch));
             win &&= discovered.has(ch);
         }
@@ -46,12 +47,12 @@ class Game extends Component {
     }
 
     render() {
-        const { word } = this.props;
+        const { word, refreshPage } = this.props;
         const { ended, victory, health, discovered } = this.state;
 
         return (
             <>
-                <Status ended={ended} victory={victory} health={health} />
+                <Status ended={ended} victory={victory} health={health} word={word} refreshPage={refreshPage} />
                 <Blanks word={word} discovered={discovered} />
                 <div className='game'>
                     <div className='left'>
