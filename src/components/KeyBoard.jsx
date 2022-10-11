@@ -10,8 +10,9 @@ function KeyBoard({ discovered, btnOnClick }) {
     return (
         <div className='keyboard'>
             <div className='grid2'>
-                {alphabet.slice(0, 7).map(ch =>
+                {alphabet.slice(0, 7).map((ch, index) =>
                     <AZButton
+                        key={index}
                         ch={ch}
                         visible={!discovered.has(ch)}
                         btnOnClick={btnOnClick}
@@ -19,8 +20,9 @@ function KeyBoard({ discovered, btnOnClick }) {
                 )}
             </div>
             <div className='grid2'>
-                {alphabet.slice(7, 14).map(ch =>
+                {alphabet.slice(7, 14).map((ch, index) =>
                     <AZButton
+                        key={index}
                         ch={ch}
                         visible={!discovered.has(ch)}
                         btnOnClick={btnOnClick}
@@ -28,8 +30,9 @@ function KeyBoard({ discovered, btnOnClick }) {
                 )}
             </div>
             <div className='grid2'>
-                {alphabet.slice(14, 21).map(ch =>
+                {alphabet.slice(14, 21).map((ch, index) =>
                     <AZButton
+                        key={index}
                         ch={ch}
                         visible={!discovered.has(ch)}
                         btnOnClick={btnOnClick}
@@ -37,8 +40,9 @@ function KeyBoard({ discovered, btnOnClick }) {
                 )}
             </div>
             <div className='grid2'>
-                {alphabet.slice(21).map(ch =>
+                {alphabet.slice(21).map((ch, index) =>
                     <AZButton
+                        key={index}
                         ch={ch}
                         visible={!discovered.has(ch)}
                         btnOnClick={btnOnClick}

@@ -1,5 +1,6 @@
 # Hangman Game
 
-- Add home page and categories
+- Remove warnings
+- Add home page and themes
 - data.json
 - Add React Router

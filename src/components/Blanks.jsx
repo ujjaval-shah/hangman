@@ -3,7 +3,7 @@ import React from 'react';
 function Blanks({ word, discovered }) {
     return (
         <div className='grid1'>
-            {[...word].map(ch => <Character ch={ch} visible={discovered.has(ch)} />)}
+            {[...word].map((ch, index) => <Character key={index} ch={ch} visible={discovered.has(ch)} />)}
         </div>
     );
 }
