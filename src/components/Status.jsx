@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Status({ ended, victory, health }) {
+function Status({ ended, victory, health, word }) {
 
     const status = ended ? (
-        victory ? "Congratulations!! You won!!" : "Game Over!"
+        victory ? "Congratulations!! You won!!" : `Game Over! The Correct Ans is ${word}.`
     ) : (
         "Life Bar = " + "♡".repeat(6 - health) + "♥".repeat(health)
     );
