@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 @import url("./css/home.css");
 @import url("./css/status.css");
+@import url("./css/lifebar.css");
 @import url("./css/hangman.css");
 @import url("./css/game.css");
 
@@ -15,4 +16,8 @@
 
 .App {
 	text-align: center;
+}
+
+.inline-div {
+	display: inline-block;
 }
