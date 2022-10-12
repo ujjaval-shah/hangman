@@ -13,7 +13,7 @@ function Status({ ended, victory, health, word, refreshPage }) {
     );
 
     return (
-        <div className='status'>
+        <div className='status gamingfont'>
             Status: {status}
             {ended &&
                 <>

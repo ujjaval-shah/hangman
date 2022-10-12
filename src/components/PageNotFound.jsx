@@ -6,7 +6,7 @@ function PageNotFound(props) {
         <div className='home gamingfont'>
             Page Not Found.
             <br />
-            Go Back To <Link to={"/"}> Home </Link>.
+            Go Back To <Link to={"/"}>Home</Link>.
         </div>
     );
 }
