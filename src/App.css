@@ -22,3 +22,15 @@
 .inline-div {
 	display: inline-block;
 }
+
+.github {
+	height: 100%;
+}
+
+.github-repo-link {
+	position: fixed;
+	bottom: 1vw;
+	right: 1vw;
+	width: fit-content;
+	height: 4vw;
+}

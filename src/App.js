@@ -4,6 +4,7 @@ import Title from './components/Title';
 import { Routes, Route } from "react-router-dom";
 import Home from './components/Home';
 import PageNotFound from './components/PageNotFound';
+import Github from './components/Github';
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 				<Route path="/theme/:theme/level/:level" element={<Theme />} />
 				<Route path="*" element={<PageNotFound />} />
 			</Routes>
+			<Github />
 		</div>
 	);
 }
