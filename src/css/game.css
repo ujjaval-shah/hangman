@@ -11,7 +11,7 @@
 }
 
 .ch {
-	border-bottom: 0.5vh solid;
+	border-bottom: 0.25vw solid;
 	margin: 0 10%;
 	width: 4vw;
 	height: 4vw;
@@ -25,7 +25,7 @@
 .grid2 {
 	/* padding: 2vh 0; */
 	margin: auto;
-	margin-top: 2vh;
+	margin-top: 1vw;
 	display: grid;
 	grid-auto-flow: column;
 	/* grid-auto-columns: 1fr; */
@@ -39,7 +39,7 @@
 }
 
 .btn {
-	border: 0.2vh solid;
+	border: 0.11vw solid;
 	height: 4vw;
 	width: 4vw;
 	line-height: 4vw;
