@@ -34,3 +34,16 @@
 	width: fit-content;
 	height: 4vw;
 }
+
+.footer-message {
+	margin: auto;
+	position: fixed;
+	bottom: 10vh;
+	font-size: 3vh;
+	width: 100%;
+}
+
+.footer-text {
+	padding: 4vw;
+	margin: auto;
+}
