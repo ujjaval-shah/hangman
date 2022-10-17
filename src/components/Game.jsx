@@ -29,7 +29,7 @@ class Game extends Component {
 
     btnOnClick = (event) => {
         var ch = event.target.innerText;
-        if (!this.state.discovered.has(ch)) {
+        if (!this.state.ended && !this.state.discovered.has(ch)) {
             this.setState((state, props) => {
                 let discovered = new Set(state.discovered);
                 discovered.add(ch);
